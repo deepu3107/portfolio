@@ -1,53 +1,92 @@
+/* --- GLOBAL --- */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    background: #fdfdfd;
+    color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* --- HEADER --- */
 header {
-    padding: 40px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 40px 0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .profile-pic {
-    width: 150px;
+    width: 140px;
     border-radius: 50%;
     border: 4px solid white;
 }
 
-section {
-    padding: 30px;
+.intro h1 {
+    margin: 0;
+    font-size: 2.2rem;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.role {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-li {
-    background: #00c6ff;
-    margin: 10px auto;
-    padding: 10px;
-    width: 250px;
-    border-radius: 20px;
-    color: black;
+/* --- SKILLS --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
 }
 
-.project {
-    background: rgba(255,255,255,0.1);
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
+.skill-card {
+    background: #00b4db;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-a {
-    color: #00e5ff;
+/* --- PROJECTS --- */
+.project-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-box a {
     text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* --- LINKS AND FOOTER --- */
+a {
+    color: #0077cc;
 }
 
 footer {
-    background: black;
-    padding: 15px;
-    margin-top: 20px;
+    text-align: center;
+    padding: 18px 0;
+    background: #222;
+    color: white;
 }
